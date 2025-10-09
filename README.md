@@ -43,10 +43,18 @@ Example format:
 
 ## 🐞 Glitches & Known Issues
 
-- [ ] Sometimes enemies clip through walls after dying  
-- [ ] Rare animation desync on heavy attack  
-- [ ] Loot may spawn under terrain in uneven surfaces  
-- [ ] UI overlap occurs when pausing mid-combat  
+- [ ] **Archer Form Animation Bug**  
+   When switching to the Archer form, the walking animation does not play correctly. As a result, the player may appear frozen during movement, despite actual motion input being registered.
+
+- [ ] **Arrow Shooting Responsiveness**
+   The bow and arrow mechanics currently lack smoothness. The firing sequence and animation timing require optimization to achieve more fluid and responsive combat feedback.
+  
+- [ ] **Enemy Tracking Behavior**
+   The enemy AI tracking system can become sluggish or unresponsive when the player moves behind collidable objects. In these cases, enemies may freeze or fail to reacquire the player target correctly.
+  
+- [ ] **NPC Portrait Alignment**
+   In-game NPC dialogue portraits are not properly scaled or aligned within the portrait UI frame, resulting in cropped or misaligned character visuals.
+  
 
 ---
 
