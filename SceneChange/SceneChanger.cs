@@ -21,13 +21,11 @@ public class SceneChanger : MonoBehaviour
 
     private void Start()
     {
-        // Wait a frame to ensure scene is fully loaded, then position player
         StartCoroutine(CheckPlayerPosition());
     }
 
     IEnumerator CheckPlayerPosition()
     {
-        // Wait a bit longer for everything to initialize properly
         yield return new WaitForSeconds(0.1f);
 
         if (targetTeleporter == teleporterID)
@@ -35,19 +33,17 @@ public class SceneChanger : MonoBehaviour
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
             {
-                // Force the position more aggressively
                 playerObj.transform.position = newPlayerPosition;
 
-                // If player has a Rigidbody2D, stop any movement
                 Rigidbody2D playerRb = playerObj.GetComponent<Rigidbody2D>();
                 if (playerRb != null)
                 {
                     playerRb.velocity = Vector2.zero;
                 }
 
-                Debug.Log($"Player positioned at: {playerObj.transform.position} using teleporter: {teleporterID}");
+         
             }
-            targetTeleporter = ""; // Clear it
+            targetTeleporter = ""; 
         }
     }
 
@@ -57,7 +53,6 @@ public class SceneChanger : MonoBehaviour
         {
             player = collision.transform;
 
-            // Tell the system which teleporter to spawn at in the next scene
             SetTargetTeleporter();
 
             if (fadeAnim != null)
@@ -95,4 +90,5 @@ public class SceneChanger : MonoBehaviour
         yield return new WaitForSeconds(fadeTime);
         SceneManager.LoadScene(sceneToLoad);
     }
+
 }
