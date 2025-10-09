@@ -10,8 +10,8 @@ From there, I expanded and refined the systems enhancing the code, visuals, and 
 This project represents a mix of learning, experimentation, and creativity combining external resources with self-driven development and problem-solving.
 
 # Credits & References
--  NightRun Studio YouTube Channel: [https://www.youtube.com/@NightRunStudio](https://www.youtube.com/@NightRunStudio)  
--  Original Tutorial Series: [https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc](https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc) (Extremely good and detailed tutorial, highly recommend).
+-  NightRunStudio YouTube Channel: [https://www.youtube.com/@NightRunStudio](https://www.youtube.com/@NightRunStudio)  
+-  NightRunStudio Tutorial Series: [https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc](https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc) (Extremely good and detailed tutorial, highly recommend).
   
 
 
