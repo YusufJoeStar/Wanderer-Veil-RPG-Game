@@ -11,24 +11,22 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     private HitEffect hitEffect;
-    private EnemyDeathAnimator deathAnimator; // Changed from DeathEffect to EnemyDeathAnimator
+    private EnemyDeathAnimator deathAnimator; 
     private bool isDead = false;
 
     private void Start()
     {
         currentHealth = maxHealth;
         hitEffect = GetComponent<HitEffect>();
-        deathAnimator = GetComponent<EnemyDeathAnimator>(); // Changed from DeathEffect to EnemyDeathAnimator
+        deathAnimator = GetComponent<EnemyDeathAnimator>(); 
     }
 
     public void ChangeHealth(int amount)
     {
-        // Don't take damage if already dead
         if (isDead) return;
 
         currentHealth += amount;
 
-        // Play hit effect when taking damage (but NOT dying)
         if (amount < 0 && currentHealth > 0 && hitEffect != null)
         {
             hitEffect.PlayHitEffect();
@@ -46,20 +44,19 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
-        isDead = true; // Set dead flag immediately
+        isDead = true; 
 
-        // Award experience immediately
+        
         OnMonsterDefeated?.Invoke(expReward);
 
-        // Start death animation (this handles loot drops and cleanup)
         if (deathAnimator != null)
         {
             deathAnimator.PlayDeathAnimation();
         }
         else
         {
-            // Fallback: destroy immediately if no death animator
             Destroy(gameObject);
         }
     }
+
 }
