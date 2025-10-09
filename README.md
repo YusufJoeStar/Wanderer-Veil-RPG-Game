@@ -31,10 +31,13 @@ Example format:
 |--------|-----|
 | Move | W / A / S / D |
 | Attack | Left Mouse Button |
-| Heavy Attack | Right Mouse Button |
-| Dash | Space |
-| Interact / Pickup | E |
-| Inventory | I |
+| Switch Form | Q |
+| Shoot Arrow | Shift |
+| Stats | J |
+| SkillTree | K |
+| Interact | E |
+
+
 
 ---
 
