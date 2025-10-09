@@ -39,8 +39,7 @@ This project represents a mix of learning, experimentation, and creativity combi
 
 ##  Controls
 
-*(You can fill this section with your own text later.)*  
-Example format:
+
 
 | Action | Key |
 |--------|-----|
