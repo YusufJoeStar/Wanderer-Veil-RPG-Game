@@ -17,9 +17,8 @@ public class Arrow : MonoBehaviour
     public SpriteRenderer sr;
     public Sprite buriedSprite;
 
-    private bool hasHit = false; // Prevents multiple collisions
-    private Vector3 hitPosition; // Store hit position for precise sticking
-
+    private bool hasHit = false; 
+    private Vector3 hitPosition; 
     void Start()
     {
         rb.velocity = direction * speed;
@@ -41,21 +40,21 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (hasHit) return; // Already hit something, ignore
+        if (hasHit) return; 
 
-        // Check if it's an enemy by layer
+       
         if ((enemyLayer.value & (1 << other.gameObject.layer)) > 0)
         {
-            // Make sure it's actually an enemy with the required components
+            
             EnemyHealth enemyHealth = other.GetComponent<EnemyHealth>();
-            if (enemyHealth != null) // Only hit if it has EnemyHealth component
+            if (enemyHealth != null) 
             {
                 hasHit = true;
 
-                // Deal damage
+               
                 enemyHealth.ChangeHealth(-damage);
 
-                // Apply knockback
+               
                 EnemyKnockBack enemyKnockback = other.GetComponent<EnemyKnockBack>();
                 if (enemyKnockback != null)
                 {
@@ -63,12 +62,12 @@ public class Arrow : MonoBehaviour
                 }
 
                 Debug.Log($"Arrow hit enemy: {other.gameObject.name}");
-                Destroy(gameObject); // Immediately destroy after hitting an enemy
+                Destroy(gameObject); 
                 return;
             }
         }
 
-        // Check if it's an obstacle
+        
         if ((obstacleLayer.value & (1 << other.gameObject.layer)) > 0)
         {
             hitPosition = transform.position;
@@ -76,27 +75,21 @@ public class Arrow : MonoBehaviour
         }
     }
 
-    // Keep collision detection as backup for solid colliders
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (hasHit) return; // Already hit something, ignore
+        if (hasHit) return; 
 
-        // Store the exact hit position
         hitPosition = collision.contacts[0].point;
 
-        // Enemy hit
         if ((enemyLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
-            // Make sure it's actually an enemy with the required components
             EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-            if (enemyHealth != null) // Only hit if it has EnemyHealth component
+            if (enemyHealth != null) 
             {
                 hasHit = true;
 
-                // Deal damage
                 enemyHealth.ChangeHealth(-damage);
 
-                // Apply knockback
                 EnemyKnockBack enemyKnockback = collision.gameObject.GetComponent<EnemyKnockBack>();
                 if (enemyKnockback != null)
                 {
@@ -104,11 +97,10 @@ public class Arrow : MonoBehaviour
                 }
 
                 Debug.Log($"Arrow hit enemy: {collision.gameObject.name}");
-                Destroy(gameObject); // Immediately destroy after hitting an enemy
+                Destroy(gameObject); 
                 return;
             }
         }
-        // Obstacle hit
         else if ((obstacleLayer.value & (1 << collision.gameObject.layer)) > 0)
         {
             AttachToTarget(collision.transform);
@@ -119,33 +111,26 @@ public class Arrow : MonoBehaviour
     {
         hasHit = true;
 
-        // Immediately stop all physics
         rb.velocity = Vector2.zero;
         rb.angularVelocity = 0f;
         rb.isKinematic = true;
 
-        // Disable collider to prevent further physics interactions
         Collider2D col = GetComponent<Collider2D>();
         if (col != null)
             col.enabled = false;
 
-        // Set position to exact hit point for precise sticking
         transform.position = hitPosition;
 
-        // Change sprite to buried version
         if (buriedSprite != null)
             sr.sprite = buriedSprite;
 
-        // Parent to target for movement with it
         transform.SetParent(target);
 
-        // Cancel self-destruct
         CancelInvoke(nameof(SelfDestruct));
 
         Debug.Log($"Arrow stuck to {target.name} at position {hitPosition}");
     }
 
-    // Safety check to ensure arrow stops if it's still moving after being marked as hit
     private void FixedUpdate()
     {
         if (hasHit && !rb.isKinematic)
@@ -155,4 +140,5 @@ public class Arrow : MonoBehaviour
             rb.isKinematic = true;
         }
     }
+
 }
