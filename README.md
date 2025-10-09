@@ -35,12 +35,9 @@ This project represents a mix of learning, experimentation, and creativity combi
 
 ---
 
-## 🖼️ Screenshots
 
 
----
-
-## 🎮 Controls
+##  Controls
 
 *(You can fill this section with your own text later.)*  
 Example format:
@@ -59,7 +56,7 @@ Example format:
 
 ---
 
-## 🐞 Glitches & Known Issues
+##  Glitches & Known Issues
 
 - [ ] **Archer Form Animation Bug**:
 
@@ -87,7 +84,7 @@ Example format:
 
 ---
 
-## 🚧 Improvements & Upcoming Additions
+##  Improvements & Upcoming Additions
 
 - [ ] **Quest and Reward System**  :
 
@@ -115,7 +112,7 @@ Example format:
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 - **Programming Language:** C#  
 - **Game Engine:** Unity (Version 2021.3.31f1)  
@@ -123,7 +120,7 @@ Example format:
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 The game is currently still a WIP, will add the instructions as soon as I'm done.
 
