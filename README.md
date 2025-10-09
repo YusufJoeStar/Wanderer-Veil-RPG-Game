@@ -48,12 +48,15 @@ Example format:
 
 - [ ] **Arrow Shooting Responsiveness**
    The bow and arrow mechanics currently lack smoothness. The firing sequence and animation timing require optimization to achieve more fluid and responsive combat feedback.
+
   
 - [ ] **Enemy Tracking Behavior**
    The enemy AI tracking system can become sluggish or unresponsive when the player moves behind collidable objects. In these cases, enemies may freeze or fail to reacquire the player target correctly.
+
   
 - [ ] **NPC Portrait Alignment**
    In-game NPC dialogue portraits are not properly scaled or aligned within the portrait UI frame, resulting in cropped or misaligned character visuals.
+
   
 
 ---
