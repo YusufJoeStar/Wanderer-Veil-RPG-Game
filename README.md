@@ -1,15 +1,18 @@
-# 🎮 Wanderer’s Veil
+#  Wanderer’s Veil
 
 
 **Wanderer’s Veil** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
-The foundation of the project was built following the **NightRun Studio** Unity tutorials on YouTube, which provided the core structure and mechanics.  
-From there, I expanded and refined the systems — enhancing the code, visuals, and overall gameplay logic — with the assistance of modern AI tools such as **Claude AI** and **ChatGPT** to improve efficiency, structure, and clarity.
 
-This project represents a mix of learning, experimentation, and creativity — combining external resources with self-driven development and problem-solving.
+The foundation of the project was built following the **NightRunStudio** Unity tutorials on YouTube, which provided the core structure and mechanics.  
+
+From there, I expanded and refined the systems enhancing the code, visuals, and overall gameplay logic with the assistance of AI tools such as **Claude AI** and **ChatGPT** to improve the structure and clarity.
+
+This project represents a mix of learning, experimentation, and creativity combining external resources with self-driven development and problem-solving.
 
 **Credits & References:**
-- 🎥 NightRun Studio YouTube Channel: [https://www.youtube.com/@NightRunStudio](https://www.youtube.com/@NightRunStudio)  
-- 📘 Original Tutorial Series: [https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc](https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc)
+-  NightRun Studio YouTube Channel: [https://www.youtube.com/@NightRunStudio](https://www.youtube.com/@NightRunStudio)  
+-  Original Tutorial Series: [https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc](https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc) (Extremely good and detailed tutorial, highly recommend).
+  
 .
 
 ---
