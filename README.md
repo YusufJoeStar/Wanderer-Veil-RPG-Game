@@ -1,6 +1,5 @@
 # 🎮 RPG-GAME
 
-# 🎮 RPG-GAME
 
 **RPG-GAME** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
 The foundation of the project was built following the **NightRun Studio** Unity tutorials on YouTube, which provided the core structure and mechanics.  
