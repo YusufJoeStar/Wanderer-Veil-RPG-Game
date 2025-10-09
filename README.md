@@ -99,17 +99,16 @@ Example format:
 
 ## 🧠 Tech Stack
 
-- **Engine:** Unity (C#)
-- **Version:** 2022.x or newer  
-- **Core Systems:** Animator Controller, ScriptableObjects, Prefabs  
-- **IDE:** Visual Studio / Rider  
-- **Version Control:** Git + GitHub  
-- **Platform:** PC / Windows  
+- **Programming Language:** C#  
+- **Game Engine:** Unity (Version 2021.3.31f1)  
+- **IDE:** Visual Studio  
 
 ---
 
 ## ⚙️ Setup Instructions
 
-1. **Clone or Download the Repository**
-   ```bash
-   git clone https://github.com/YourUsername/RPG-GAME.git
+The game is currently still a WIP, will add the instructions as soon as I'm done.
+
+## Code Usage
+
+Feel free to use any part of this code in your own projects, personal, educational, or commercial. No credit or permission required. I’m just happy if it helps someone else.
