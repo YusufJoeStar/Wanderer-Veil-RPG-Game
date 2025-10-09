@@ -71,11 +71,23 @@ Example format:
 
 ## 🚧 Improvements & Upcoming Additions
 
-- [ ] Skill Tree System  
-- [ ] Quest Dialogue System  
-- [ ] Better Enemy AI (patrol + detection)  
-- [ ] Save/Load functionality  
-- [ ] Polished animations and particle effects  
+1. **Quest and Reward System**  
+   Introduce a structured quest system that allows players to undertake objectives and receive corresponding rewards upon completion, adding progression and purpose to exploration.
+
+2. **Audio and Sound Design**  
+   Implement a complete sound system including background music, ambient effects, and responsive sound cues for actions such as attacks, item pickups, and environmental interactions.
+
+3. **Main Menu and Game Interface**  
+   Develop a functional main menu featuring options such as *New Game*, *Continue*, and *Settings* to enhance accessibility and presentation.
+
+4. **Enhanced Enemy AI and Combat Systems**  
+   Refine enemy tracking behavior, combat responsiveness, and engagement logic to create more dynamic and challenging encounters.
+
+5. **Environmental and Map Improvements**  
+   Enrich the game world with additional decorative assets, detailed environments, and interactive props to make the map more visually appealing and immersive.
+
+6. **Expanded NPC Interaction and Dialogue Choices**  
+   Add more NPCs throughout the world and integrate a branching, decision-based dialogue system to increase narrative depth and replayability. 
 
 ---
 
