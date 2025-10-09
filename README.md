@@ -34,6 +34,7 @@ This project represents a mix of learning, experimentation, and creativity combi
 # Credits & References
 -  NightRunStudio YouTube Channel: [https://www.youtube.com/@NightRunStudio](https://www.youtube.com/@NightRunStudio)  
 -  NightRunStudio Tutorial Series: [https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc](https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc) (Extremely good and detailed tutorial, highly recommend).
+-  Tiny Swords - Pixel Frog Assets (Itch.io): https://pixelfrog-assets.itch.io/tiny-swords
   
 
 
