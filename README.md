@@ -1,7 +1,7 @@
-# 🎮 RPG-GAME
+# 🎮 Wanderer’s Veil
 
 
-**RPG-GAME** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
+**Wanderer’s Veil** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
 The foundation of the project was built following the **NightRun Studio** Unity tutorials on YouTube, which provided the core structure and mechanics.  
 From there, I expanded and refined the systems — enhancing the code, visuals, and overall gameplay logic — with the assistance of modern AI tools such as **Claude AI** and **ChatGPT** to improve efficiency, structure, and clarity.
 
