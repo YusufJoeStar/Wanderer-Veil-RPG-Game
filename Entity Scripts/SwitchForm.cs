@@ -31,7 +31,6 @@ public class SwitchForm : MonoBehaviour
     {
         isArcherForm = false;
 
-        // Disable bow first to prevent OnEnable conflicts
         bow.enabled = false;
 
         if (animator != null)
@@ -53,7 +52,6 @@ public class SwitchForm : MonoBehaviour
     {
         isArcherForm = true;
 
-        // Disable combat first
         combat.enabled = false;
 
         if (animator != null)
@@ -63,19 +61,17 @@ public class SwitchForm : MonoBehaviour
             animator.SetBool("isAttacking", false);
             animator.SetBool("isShooting", false);
 
-            // Don't set aimX and aimY here - let PlayerBow handle it
-            // This prevents conflicts between the two systems
+
         }
 
-        // Enable bow last so its OnEnable() method gets the correct initial state
         bow.enabled = true;
 
         Debug.Log("Switched to Archer Form");
     }
 
-    // Public getter for other scripts to check current form
     public bool IsArcherForm()
     {
         return isArcherForm;
     }
+
 }
