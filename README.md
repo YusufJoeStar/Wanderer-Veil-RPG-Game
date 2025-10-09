@@ -1,7 +1,17 @@
 # 🎮 RPG-GAME
 
-Welcome to **RPG-GAME**, a Unity-based action-adventure project featuring combat, exploration, and loot systems.  
-This repository serves as a showcase of the game's structure, scripts, and systems.
+# 🎮 RPG-GAME
+
+**RPG-GAME** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
+The foundation of the project was built following the **NightRun Studio** Unity tutorials on YouTube, which provided the core structure and mechanics.  
+From there, I expanded and refined the systems — enhancing the code, visuals, and overall gameplay logic — with the assistance of modern AI tools such as **Claude AI** and **ChatGPT** to improve efficiency, structure, and clarity.
+
+This project represents a mix of learning, experimentation, and creativity — combining external resources with self-driven development and problem-solving.
+
+**Credits & References:**
+- 🎥 NightRun Studio YouTube Channel: [https://www.youtube.com/@NightRunStudio](https://www.youtube.com/@NightRunStudio)  
+- 📘 Original Tutorial Series: [https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc](https://www.youtube.com/watch?v=ZfTU67ZIK3Q&list=PLSR2vNOypvs5yLsbqZc0e6RdqNnP1eGIc)
+.
 
 ---
 
