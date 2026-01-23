@@ -1,5 +1,7 @@
 #  Wanderer’s Veil
 
+<img width="953" height="534" alt="image" src="https://github.com/user-attachments/assets/30110242-6112-4168-848a-b6df9fa87d6f" />
+<img width="947" height="519" alt="image" src="https://github.com/user-attachments/assets/bd34c23c-64db-4ba7-8a35-3e170944a08b" />
 <img width="1620" height="903" alt="image" src="https://github.com/user-attachments/assets/fd2bc4f1-0658-4997-82d1-9278fea6b305" />
 <img width="1618" height="899" alt="image" src="https://github.com/user-attachments/assets/d9782a63-b934-4d66-a395-373434ea3a51" />
 <img width="1600" height="890" alt="image" src="https://github.com/user-attachments/assets/797e9d44-e715-453c-98b3-d37ffe733c42" />
