@@ -25,7 +25,7 @@
 
 
 
-**Wanderer’s Veil** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
+**Wanderer Viel** is a personal project developed over the span of two months, inspired by my passion for action-RPG systems and gameplay design.  
 
 The foundation of the project was built following the **NightRunStudio** Unity tutorials on YouTube, which provided the core structure and mechanics.  
 
