@@ -41,6 +41,14 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.DialogueManager = this;
+        }
+        // CRITICAL FIX: Reset static dialogue state when scene loads
+        IsDialogueActive = false;
+        isDialogueActive = false;
+
         // Setup audio source for typewriter sound
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
@@ -67,6 +75,20 @@ public class DialogueManager : MonoBehaviour
         // Enable rich text on the dialogue text component
         if (dialogueText != null)
             dialogueText.richText = true;
+    }
+
+    // ADDED: Ensure dialogue state is reset when this object is destroyed
+    private void OnDestroy()
+    {
+        // Reset static state when DialogueManager is destroyed
+        IsDialogueActive = false;
+    }
+
+    // ADDED: Ensure dialogue state is reset when disabled
+    private void OnDisable()
+    {
+        IsDialogueActive = false;
+        isDialogueActive = false;
     }
 
     public void StartDialogue(DialogueSO dialogueSO)
@@ -182,7 +204,18 @@ public class DialogueManager : MonoBehaviour
         if (currentDialogue == null || dialogueIndex >= currentDialogue.lines.Length) return;
 
         DialogueLine line = currentDialogue.lines[dialogueIndex];
-        GameManager.Instance.DialogueHistoryTracker.RecordNPC(line.speaker);
+
+        // Use static Instance first, fallback to GameManager
+        DialogueHistoryTracker tracker = DialogueHistoryTracker.Instance;
+        if (tracker == null && GameManager.Instance != null)
+        {
+            tracker = GameManager.Instance.DialogueHistoryTracker;
+        }
+
+        if (tracker != null && line.speaker != null)
+        {
+            tracker.RecordNPC(line.speaker);
+        }
 
         if (line.speaker != null)
         {
@@ -341,7 +374,11 @@ public class DialogueManager : MonoBehaviour
             button.onClick.AddListener(EndDialogue);
             button.gameObject.SetActive(true);
         }
-        EventSystem.current.SetSelectedGameObject(choiceButtons[0].gameObject);
+
+        if (EventSystem.current != null)
+        {
+            EventSystem.current.SetSelectedGameObject(choiceButtons[0].gameObject);
+        }
     }
 
     private void OnChoiceSelected(int choiceIndex)
@@ -387,7 +424,7 @@ public class DialogueManager : MonoBehaviour
         if (playerMovement != null) playerMovement.enabled = true;
         dialogueIndex = 0;
         isDialogueActive = false;
-        IsDialogueActive = false;
+        IsDialogueActive = false; // CRITICAL: Reset static state
         isTyping = false;
         HideAllChoices();
 
@@ -399,13 +436,14 @@ public class DialogueManager : MonoBehaviour
         }
         lastDialogueEndTime = Time.unscaledTime;
 
-        // Handle removal properly
-        if (currentDialogue != null)
+        // Handle removal properly - with null checks
+        NPC_Talk npcTalk = FindObjectOfType<NPC_Talk>();
+        if (currentDialogue != null && npcTalk != null)
         {
             // Remove this one if flagged
             if (currentDialogue.removeAfterPlay)
             {
-                FindObjectOfType<NPC_Talk>().MarkDialogueForRemoval(currentDialogue);
+                npcTalk.MarkDialogueForRemoval(currentDialogue);
             }
 
             // Remove linked dialogues
@@ -413,13 +451,13 @@ public class DialogueManager : MonoBehaviour
             {
                 foreach (var d in currentDialogue.removeTheseOnPlay)
                 {
-                    FindObjectOfType<NPC_Talk>().MarkDialogueForRemoval(d);
+                    npcTalk.MarkDialogueForRemoval(d);
                 }
             }
-        }
 
-        // Now actually apply removals
-        FindObjectOfType<NPC_Talk>().ApplyPendingRemovals();
+            // Now actually apply removals
+            npcTalk.ApplyPendingRemovals();
+        }
 
         currentDialogue = null;
     }
