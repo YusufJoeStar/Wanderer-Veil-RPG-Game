@@ -20,6 +20,8 @@ public class SwitchForm : MonoBehaviour
     {
         if (Input.GetButtonDown("SwitchForm"))
         {
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.PlaySFX("FormSwitch");
             if (isArcherForm)
                 SetCombatForm();
             else
@@ -31,6 +33,7 @@ public class SwitchForm : MonoBehaviour
     {
         isArcherForm = false;
 
+       
         bow.enabled = false;
 
         if (animator != null)
@@ -52,6 +55,7 @@ public class SwitchForm : MonoBehaviour
     {
         isArcherForm = true;
 
+       
         combat.enabled = false;
 
         if (animator != null)
@@ -61,17 +65,18 @@ public class SwitchForm : MonoBehaviour
             animator.SetBool("isAttacking", false);
             animator.SetBool("isShooting", false);
 
-
+       
         }
 
+        // Enable bow last so its OnEnable() method gets the correct initial state
         bow.enabled = true;
 
         Debug.Log("Switched to Archer Form");
     }
 
+    
     public bool IsArcherForm()
     {
         return isArcherForm;
     }
-
 }
