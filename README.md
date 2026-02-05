@@ -67,12 +67,14 @@ This project represents a mix of learning, experimentation, and creativity combi
 - [ ] **Archer Form Animation Bug**:
 
    When switching to the Archer form, the walking animation does not play correctly. As a result, the player may appear frozen during movement, despite actual motion input being registered.
+   [FIXED]
 
 
 
 - [ ] **Arrow Shooting Responsiveness**:
 
    The bow and arrow mechanics currently lack smoothness. The firing sequence and animation timing require optimization to achieve more fluid and responsive combat feedback.
+   [FIXED]
 
 
   
@@ -99,14 +101,26 @@ This project represents a mix of learning, experimentation, and creativity combi
 - [ ] **Audio and Sound Design**  :
 
    Implement a complete sound system including background music, ambient effects, and responsive sound cues for actions such as attacks, item pickups, and environmental interactions.
+   
+   ..............................................................
+   
+   [Added AudioManager]
 
 - [ ] **Main Menu and Game Interface**  :
 
    Develop a functional main menu featuring options such as *New Game*, *Continue*, and *Settings* to enhance accessibility and presentation.
+   
+   ..............................................................
+   
+   [Added Introductory Video, Main Menu and Pause Menu]
 
 - [ ] **Enhanced Enemy AI and Combat Systems**  :
 
    Refine enemy tracking behavior, combat responsiveness, and engagement logic to create more dynamic and challenging encounters.
+   
+   ..............................................................
+   
+   [Added heavy attacking and improved combat to idle transitions via animator, Enemy AI is still in the works]
 
 - [ ] **Environmental and Map Improvements**  :
 
