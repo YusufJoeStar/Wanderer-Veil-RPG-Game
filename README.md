@@ -1,7 +1,9 @@
 #  Wanderer Viel
 
-<img width="953" height="534" alt="image" src="https://github.com/user-attachments/assets/30110242-6112-4168-848a-b6df9fa87d6f" />
-<img width="947" height="519" alt="image" src="https://github.com/user-attachments/assets/bd34c23c-64db-4ba7-8a35-3e170944a08b" />
+<img width="1615" height="898" alt="image" src="https://github.com/user-attachments/assets/d8d136db-31f9-4913-9fe0-a7d5cee11bfb" />
+<img width="1606" height="895" alt="image" src="https://github.com/user-attachments/assets/c2b09ec1-8a47-477a-82b6-f18517c980cb" />
+<img width="1337" height="801" alt="image" src="https://github.com/user-attachments/assets/99558893-d470-4505-8232-a5ca687497c3" />
+<img width="904" height="638" alt="image" src="https://github.com/user-attachments/assets/d811b044-2381-488c-8ca4-523d39101c3f" />
 <img width="1620" height="903" alt="image" src="https://github.com/user-attachments/assets/fd2bc4f1-0658-4997-82d1-9278fea6b305" />
 <img width="1618" height="899" alt="image" src="https://github.com/user-attachments/assets/d9782a63-b934-4d66-a395-373434ea3a51" />
 <img width="1600" height="890" alt="image" src="https://github.com/user-attachments/assets/797e9d44-e715-453c-98b3-d37ffe733c42" />
@@ -124,7 +126,11 @@ This project represents a mix of learning, experimentation, and creativity combi
 
 - [ ] **Environmental and Map Improvements**  :
 
-   Enrich the game world with additional decorative assets, detailed environments, and interactive props to make the map more visually appealing and immersive.
+   Enrich the game world with additional decorative assets, detailed environments, sound effects, audio and interactive props to make the map more visually appealing and immersive.
+
+   ..............................................................
+
+   [Added sound effects, game tracks and loot persistence, yet alot is still in the works]
 
 - [ ] **Expanded NPC Interaction and Dialogue Choices**  :
 
